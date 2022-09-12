@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-          height: orientation == 'portrait' ? height - 500 : height,
+          height: orientation == 'portrait' ? height - 200 : height,
           // color: Colors.red,
           child: Center(
               child: Padding(
@@ -89,6 +89,14 @@ class Home extends StatelessWidget {
                                   value: 'dark',
                                   child: Text(
                                     'Dark',
+                                    style:
+                                        Theme.of(context).textTheme.headline6,
+                                  ),
+                                ),
+                                DropdownMenuItem<String>(
+                                  value: 'system',
+                                  child: Text(
+                                    'System',
                                     style:
                                         Theme.of(context).textTheme.headline6,
                                   ),
