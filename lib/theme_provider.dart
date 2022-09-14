@@ -34,6 +34,11 @@ class ThemeProvider extends ChangeNotifier {
 class MyThemes {
   static final darkTheme = ThemeData(
     scaffoldBackgroundColor: Colors.grey.shade900,
+    textTheme: const TextTheme(
+      headline1: TextStyle(fontSize: 74.0, fontWeight: FontWeight.bold),
+      subtitle2: TextStyle(fontSize: 40.0, fontStyle: FontStyle.italic),
+      bodyText1: TextStyle(fontSize: 20.0, fontFamily: 'Hind'),
+    ),
     colorScheme: ColorScheme.fromSwatch(
       brightness: Brightness.dark,
       primarySwatch: Colors.pink,
@@ -44,6 +49,11 @@ class MyThemes {
   static final lightTheme = ThemeData(
     scaffoldBackgroundColor: Colors.white,
     primaryColor: Colors.white,
+    textTheme: const TextTheme(
+      headline1: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
+      subtitle2: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
+      bodyText1: TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
+    ),
     colorScheme: ColorScheme.fromSwatch(
       primarySwatch: Colors.blue,
       accentColor: Colors.redAccent,

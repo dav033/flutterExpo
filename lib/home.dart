@@ -23,37 +23,35 @@ class Home extends StatelessWidget {
                     children: [
                       Container(
                         margin: const EdgeInsets.only(bottom: 20, top: 20),
-                        child: const TextField(
-                          decoration: InputDecoration(
-                              border: OutlineInputBorder(),
-                              labelText: 'Usuario'),
-                        ),
+                        child: TextField(
+                            decoration: const InputDecoration(
+                                border: OutlineInputBorder(),
+                                labelText: 'Usuario'),
+                            style: Theme.of(context).textTheme.bodyText1),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(bottom: 20),
-                        child: const TextField(
-                          decoration: InputDecoration(
-                              border: OutlineInputBorder(),
-                              labelText: 'Correo'),
-                        ),
+                        margin: const EdgeInsets.only(bottom: 20, top: 20),
+                        child: TextField(
+                            decoration: const InputDecoration(
+                                border: OutlineInputBorder(),
+                                labelText: 'Correo'),
+                            style: Theme.of(context).textTheme.bodyText1),
                       ),
                       Container(
-                        //color: Theme.of(context).colorScheme.secondary,
-                        margin: const EdgeInsets.only(bottom: 20),
-                        child: const TextField(
-                          decoration: InputDecoration(
-                              border: OutlineInputBorder(),
-                              labelText: 'Contraseña'),
-                        ),
+                        margin: const EdgeInsets.only(bottom: 20, top: 20),
+                        child: TextField(
+                            decoration: const InputDecoration(
+                                border: OutlineInputBorder(),
+                                labelText: 'Contraseña'),
+                            style: Theme.of(context).textTheme.bodyText1),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(bottom: 20),
-                        // E padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 50),
-                        child: const TextField(
-                          decoration: InputDecoration(
-                              border: OutlineInputBorder(),
-                              labelText: 'Confirmar Contraseña'),
-                        ),
+                        margin: const EdgeInsets.only(bottom: 20, top: 20),
+                        child: TextField(
+                            decoration: const InputDecoration(
+                                border: OutlineInputBorder(),
+                                labelText: 'Confirmar Contraseña'),
+                            style: Theme.of(context).textTheme.bodyText1),
                       ),
                       Container(
                           color: Theme.of(context).colorScheme.secondary,
